@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda de productos tecnológicos con diseño responsive">
+  <title>TecnoShop | Productos tecnológicos</title>
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="barra-navegacion">
+      <a class="marca" href="#inicio" aria-label="Ir al inicio">
+        <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+        <span>TecnoShop</span>
+      </a>
+
+      <!-- Control del menú móvil sin JavaScript -->
+      <input class="menu-control" type="checkbox" id="menu-control">
+      <label class="menu-boton" for="menu-control" aria-label="Abrir o cerrar menú">
+        <i class="fa-solid fa-bars icono-abrir" aria-hidden="true"></i>
+        <i class="fa-solid fa-xmark icono-cerrar" aria-hidden="true"></i>
+      </label>
+
+      <nav class="menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+          <li><a href="#productos"><i class="fa-solid fa-box-open"></i> Productos</a></li>
+          <li><a href="#nosotros"><i class="fa-solid fa-users"></i> Nosotros</a></li>
+          <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-contenido">
+        <p class="etiqueta">Tecnología para todos</p>
+        <h1>Encuentra el equipo ideal para tu escritorio</h1>
+        <p>Productos seleccionados para estudiar, trabajar y jugar con comodidad.</p>
+        <a class="boton boton-principal" href="#productos">
+          Ver productos <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="seccion-productos" id="productos">
+      <div class="titulo-seccion">
+        <p class="etiqueta">Productos destacados</p>
+        <h2>Conoce nuestras recomendaciones</h2>
+        <p>Elige el producto que mejor se adapte a tus necesidades.</p>
+      </div>
+
+      <div class="productos">
+        <article class="producto">
+          <div class="producto-imagen">
+            <img
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+              alt="Auriculares inalámbricos negros"
+              loading="lazy">
+            <span class="insignia">Más vendido</span>
+          </div>
+          <div class="producto-contenido">
+            <p class="categoria">Audio</p>
+            <h3>Auriculares Pro</h3>
+            <p class="descripcion">Sonido envolvente, micrófono integrado y almohadillas cómodas para largas sesiones.</p>
+            <div class="producto-pie">
+              <p class="precio"><span>$</span>25.000</p>
+              <button class="boton btn-carrito" type="button" aria-label="Agregar Auriculares Pro al carrito">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto-imagen">
+            <img
+              src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=900&q=80"
+              alt="Teclado mecánico con iluminación"
+              loading="lazy">
+            <span class="insignia">Nuevo</span>
+          </div>
+          <div class="producto-contenido">
+            <p class="categoria">Periféricos</p>
+            <h3>Teclado Mecánico RGB</h3>
+            <p class="descripcion">Interruptores mecánicos, iluminación personalizable y estructura resistente.</p>
+            <div class="producto-pie">
+              <p class="precio"><span>$</span>40.000</p>
+              <button class="boton btn-carrito" type="button" aria-label="Agregar Teclado Mecánico RGB al carrito">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="producto">
+          <div class="producto-imagen">
+            <img
+              src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=80"
+              alt="Ratón gamer negro sobre una mesa"
+              loading="lazy">
+            <span class="insignia">Oferta</span>
+          </div>
+          <div class="producto-contenido">
+            <p class="categoria">Gaming</p>
+            <h3>Mouse Gamer X16</h3>
+            <p class="descripcion">Sensor de alta precisión, botones configurables y diseño ergonómico.</p>
+            <div class="producto-pie">
+              <p class="precio"><span>$</span>18.000</p>
+              <button class="boton btn-carrito" type="button" aria-label="Agregar Mouse Gamer X16 al carrito">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Agregar</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+      <div>
+        <p class="etiqueta">Sobre nosotros</p>
+        <h2>Tecnología sencilla y accesible</h2>
+        <p>En TecnoShop seleccionamos productos pensados para mejorar tu espacio de estudio, trabajo o entretenimiento.</p>
+      </div>
+      <div class="beneficios">
+        <article><i class="fa-solid fa-truck-fast"></i><h3>Envíos rápidos</h3><p>Recibe tu pedido de forma cómoda.</p></article>
+        <article><i class="fa-solid fa-shield-halved"></i><h3>Compra segura</h3><p>Productos seleccionados y garantizados.</p></article>
+        <article><i class="fa-solid fa-headset"></i><h3>Atención</h3><p>Te ayudamos a elegir tu producto.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="titulo-seccion">
+    <p class="etiqueta">Contáctanos</p>
+    <h2>¿Tienes alguna consulta?</h2>
+    <p>Completa el formulario y te responderemos lo antes posible.</p>
+  </div>
+
+  <form class="formulario-contacto" action="#" method="post">
+    <div class="grupo-formulario">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Tu nombre"
+        required>
+    </div>
+
+    <div class="grupo-formulario">
+      <label for="email">Correo electrónico</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="correo@ejemplo.com"
+        required>
+    </div>
+
+    <div class="grupo-formulario">
+      <label for="asunto">Asunto</label>
+      <input
+        type="text"
+        id="asunto"
+        name="asunto"
+        placeholder="Motivo del mensaje"
+        required>
+    </div>
+
+    <div class="grupo-formulario">
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="6"
+        placeholder="Escribe tu mensaje..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="boton boton-enviar">
+      <i class="fa-solid fa-paper-plane"></i>
+      Enviar mensaje
+    </button>
+
+  </form>
+</section>
+
+  <footer id="contacto">
+    <div class="footer-contenido">
+      <div>
+        <h2>TecnoShop</h2>
+        <p>Tu tienda de tecnología.</p>
+      </div>
+      <div class="redes" aria-label="Redes sociales">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TecnoShop. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
