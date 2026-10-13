@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda de productos tecnológicos con diseño responsive">
+  <title>TecnoShop | Productos tecnológicos</title>
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="barra-navegacion">
+      <a class="marca" href="#inicio" aria-label="Ir al inicio">
+        <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+        <span>TecnoShop</span>
+      </a>
+
+      <!-- Control del menú móvil sin JavaScript -->
+      <input class="menu-control" type="checkbox" id="menu-control">
+      <label class="menu-boton" for="menu-control" aria-label="Abrir o cerrar menú">
+        <i class="fa-solid fa-bars icono-abrir" aria-hidden="true"></i>
+        <i class="fa-solid fa-xmark icono-cerrar" aria-hidden="true"></i>
+      </label>
+
+      <nav class="menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+          
+          <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+  <!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="titulo-seccion">
+    <p class="etiqueta">Contáctanos</p>
+    <h2>¿Tienes alguna consulta?</h2>
+    <p>Completa el formulario y te responderemos lo antes posible.</p>
+  </div>
+
+  <form class="formulario-contacto" action="#" method="post">
+    <div class="grupo-formulario">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Tu nombre"
+        required>
+    </div>
+
+    <div class="grupo-formulario">
+      <label for="email">Correo electrónico</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="correo@ejemplo.com"
+        required>
+    </div>
+
+    <div class="grupo-formulario">
+      <label for="asunto">Asunto</label>
+      <input
+        type="text"
+        id="asunto"
+        name="asunto"
+        placeholder="Motivo del mensaje"
+        required>
+    </div>
+
+    <div class="grupo-formulario">
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="6"
+        placeholder="Escribe tu mensaje..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="boton boton-enviar">
+      <i class="fa-solid fa-paper-plane"></i>
+      Enviar mensaje
+    </button>
+
+  </form>
+</section>
+
+  <footer id="contacto">
+    <div class="footer-contenido">
+      <div>
+        <h2>TecnoShop</h2>
+        <p>Tu tienda de tecnología.</p>
+      </div>
+      <div class="redes" aria-label="Redes sociales">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TecnoShop. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
